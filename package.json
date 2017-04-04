@@ -8,5 +8,8 @@
     "start": "node server.js"
   },
   "author": "Jerred Tam Almasco",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "mongoose": "^4.9.3"
+  }
 }
