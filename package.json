@@ -10,6 +10,7 @@
   "author": "Jerred Tam Almasco",
   "license": "ISC",
   "devDependencies": {
+    "body-parser": "^1.17.1",
     "mongoose": "^4.9.3"
   }
 }
