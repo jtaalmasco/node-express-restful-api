@@ -1,6 +1,7 @@
 var express = require('express'); //call express
-var app = express(); //define our app  using express
 var bodyParser = require('body-parser');
+var app = express(); //define our app  using express
+
 var mongoose   = require('mongoose');
 var Bear     = require('./app/models/bear');
 mongoose.connect('mongodb://node:node@novus.modulusmongo.net:27017/Iganiq8o');
@@ -23,5 +24,11 @@ router.get('/', function(req, res){
 //REGISTER OUR ROUTES ----------------
 app.use('/api', router);
 
+router.route('/bears').post(function(){
+    var bear = new Bear();
+})
+
 app.listen(port);
 console.log('Magic happens on port ' + port);
+
+var express = require('express');
