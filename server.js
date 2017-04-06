@@ -103,6 +103,7 @@ router.route('/bears/:bear_id')
 
 		});
 	})
+	
 	// delete the bear with this id
 	.delete(function(req, res) {
 		Bear.remove({
